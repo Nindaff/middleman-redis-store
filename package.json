@@ -1,0 +1,21 @@
+{
+  "name": "middleman-redis-store",
+  "version": "0.0.1",
+  "description": "Redis store for Middleman",
+  "main": "index.js",
+  "author": "Nick Pisacane <pisacanen@gmail.com> (https://github.com/Nindaff)",
+  "license": "MIT",
+  "dependencies": {
+    "bluebird": "^2.10.2",
+    "redis": "^2.2.5"
+  },
+  "devDependencies": {
+    "ioredis": "^1.9.1",
+    "mocha": "^2.3.3",
+    "should": "^7.1.1"
+  },
+  "scripts": {
+    "test": "eslint lib && ./node_modules/.bin/mocha -R spec test/*_test.js",
+    "test-ci": "./node_modules/.bin/mocha -R landing test/*_test.js"
+  }
+}
