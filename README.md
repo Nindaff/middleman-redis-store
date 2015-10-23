@@ -80,5 +80,8 @@ Type: `number`
 
 Select a redis database.
 
+## LICENSE
+MIT
+
 [travis-image]: https://travis-ci.org/Nindaff/middleman-redis-store.svg?branch=master
 [travis-url]: https://travis-ci.org/Nindaff/middleman-redis-store
