@@ -1,9 +1,16 @@
 {
   "name": "middleman-redis-store",
-  "version": "0.0.1",
-  "description": "Redis store for Middleman",
+  "version": "0.0.2",
+  "description": "Redis store implementation for Middleman",
   "main": "index.js",
   "author": "Nick Pisacane <pisacanen@gmail.com> (https://github.com/Nindaff)",
+  "keywords": [
+    "middlman",
+    "middlman-redis",
+    "redis",
+    "store",
+    "middlmen-store"
+  ],
   "license": "MIT",
   "dependencies": {
     "bluebird": "^2.10.2",
