@@ -30,7 +30,7 @@ const store = new RedisStore({
 ### Expiration Policy
 ```js
 const store = new RedisStore({
-  expire: 3600000 // milliseconds
+  maxAge: 3600000 // milliseconds
 });
 
 // Because Redis will be managing expiration, its best to set `lru: false` and NOT
@@ -54,12 +54,13 @@ Type: `string`
 Default: `"middlman"`
 
 Prefix all keys saved by the store.
-##### expire
+##### maxAge
 Type: `number`
 
 Number in **milliseconds** for time-to-live on all keys saved by RedisStore. By
 default no expiration policy is used.
-**NOTE** If you use the redis expiration policy, you will most likely want to disable
+
+**NOTE** If you use the redis expiration policy, you will most likely want to **disable**
 LRU in Middleman.
 ##### url
 Type: `string`
