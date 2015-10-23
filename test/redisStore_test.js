@@ -74,7 +74,7 @@ describe('RedisStore', function() {
       port: 6379,
       host: 'localhost',
       prefix: 'foo',
-      expire: 1000
+      maxAge: 1000
     });
 
     store.prefix.should.equal('foo');
