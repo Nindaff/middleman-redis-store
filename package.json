@@ -12,6 +12,10 @@
     "middlmen-store"
   ],
   "license": "MIT",
+  "respository": {
+    "type": "git",
+    "url": "https://github.com/Nindaff/middleman-redis-store"
+  },
   "dependencies": {
     "bluebird": "^2.10.2",
     "redis": "^2.2.5"
