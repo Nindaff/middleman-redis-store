@@ -1,6 +1,6 @@
 {
   "name": "middleman-redis-store",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Redis store implementation for Middleman",
   "main": "index.js",
   "author": "Nick Pisacane <pisacanen@gmail.com> (https://github.com/Nindaff)",
