@@ -1,9 +1,9 @@
 {
   "name": "middleman-redis-store",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Redis store implementation for Middleman",
   "main": "index.js",
-  "author": "Nick Pisacane <pisacanen@gmail.com> (https://github.com/Nindaff)",
+  "author": "Nick Pisacane <pisacanen@gmail.com> (https://github.com/nickpisacane)",
   "keywords": [
     "middlman",
     "middlman-redis",
@@ -14,7 +14,7 @@
   "license": "MIT",
   "respository": {
     "type": "git",
-    "url": "https://github.com/Nindaff/middleman-redis-store"
+    "url": "https://github.com/nickpisacane/middleman-redis-store"
   },
   "dependencies": {
     "bluebird": "^2.10.2",
@@ -26,7 +26,7 @@
     "should": "^7.1.1"
   },
   "scripts": {
-    "test": "eslint lib && ./node_modules/.bin/mocha -R spec test/*_test.js",
+    "test": "./node_modules/.bin/mocha -R spec test/*_test.js",
     "test-ci": "./node_modules/.bin/mocha -R landing test/*_test.js"
   }
 }
