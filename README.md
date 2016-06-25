@@ -1,6 +1,9 @@
 # Middleman Redis Store
   [![Travis][travis-image]][travis-url]
 
+  [![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
+
+
 A Redis store implementation for middleman-proxy.
 
 ## Installation
@@ -21,24 +24,24 @@ const proxy = new Middleman({
 
 ### Custom redis client
 ```js
-const client = redis.createClient() // or ioRedis.createClient();
+const client = redis.createClient() // or ioRedis.createClient()
 const store = new RedisStore({
   client: client
-});
+})
 ```
 
 ### Expiration Policy
 ```js
 const store = new RedisStore({
   maxAge: 3600000 // milliseconds
-});
+})
 
 // Because Redis will be managing expiration, its best to set `lru: false` and NOT
 // set `maxAge` in the Middleman options.
 const proxy = new Middleman({
   lru: false,
   store: store
-});
+})
 ```
 
 ## API
@@ -84,5 +87,5 @@ Select a redis database.
 ## LICENSE
 MIT
 
-[travis-image]: https://travis-ci.org/Nindaff/middleman-redis-store.svg?branch=master
-[travis-url]: https://travis-ci.org/Nindaff/middleman-redis-store
+[travis-image]: https://travis-ci.org/nickpisacane/middleman-redis-store.svg?branch=master
+[travis-url]: https://travis-ci.org/nickpisacane/middleman-redis-store
